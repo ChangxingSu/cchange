@@ -5,7 +5,14 @@ Switch between Claude Code profiles (subscription, API keys, custom endpoints).
 ## Install
 
 ```sh
+# Option 1: install to ~/.cargo/bin (already on PATH for Rust users)
 cargo install --path .
+
+# Option 2: build and add to PATH yourself
+cargo build --release
+export PATH="$PWD/target/release:$PATH"
+# or copy the binary somewhere on your PATH:
+# cp target/release/cchange /usr/local/bin/
 ```
 
 ## Quick Start
